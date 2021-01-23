@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:id="@+id/rootv"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+
+        android:gravity="center|center_horizontal|center_vertical"
+        android:id="@+id/upiidl"
+        android:hint="Enter UPI ID">
+
+        <EditText
+            android:id="@+id/upiid"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:importantForAutofill="no" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_below="@+id/upiidl"
+        android:layout_marginTop="19dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Namel"
+        android:gravity="center|center_horizontal|center_vertical"
+
+        android:hint="NAME">
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Namel"
+        android:layout_marginTop="19dp"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center|center_horizontal|center_vertical"
+        android:id="@+id/messagel"
+        android:hint="MESSAGE">
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messagel"
+        android:layout_marginTop="19dp"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center|center_horizontal|center_vertical"
+        android:id="@+id/amountl"
+        android:hint="AMOUNT">
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<Button
+    android:id="@+id/pay"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:text="PAY NOW"
+android:onClick="pay"
+    android:layout_below="@+id/amountl"
+  android:layout_centerHorizontal="true"
+
+
+    />
+
+</RelativeLayout>
